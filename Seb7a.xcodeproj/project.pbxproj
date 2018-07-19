@@ -13,9 +13,13 @@
 		B310E80320FF966F007E346B /* Seb7a.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B310E80120FF966F007E346B /* Seb7a.xcdatamodeld */; };
 		B310E80520FF9671007E346B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B310E80420FF9671007E346B /* Assets.xcassets */; };
 		B310E80820FF9671007E346B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B310E80620FF9671007E346B /* LaunchScreen.storyboard */; };
+		EA7D0384CF7F8D873C0736BD /* Pods_Seb7a.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BECAA2C101387784A57C76 /* Pods_Seb7a.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52BECAA2C101387784A57C76 /* Pods_Seb7a.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seb7a.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76ED5E20637C496759DDE6E2 /* Pods-Seb7a.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seb7a.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Seb7a/Pods-Seb7a.debug.xcconfig"; sourceTree = "<group>"; };
+		B1D75A446D3A9C0216AE2BF0 /* Pods-Seb7a.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seb7a.release.xcconfig"; path = "Pods/Target Support Files/Pods-Seb7a/Pods-Seb7a.release.xcconfig"; sourceTree = "<group>"; };
 		B310E7F720FF966F007E346B /* Seb7a.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seb7a.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B310E7FA20FF966F007E346B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B310E7FC20FF966F007E346B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7D0384CF7F8D873C0736BD /* Pods_Seb7a.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E6C8E60272CCC055C4B47BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52BECAA2C101387784A57C76 /* Pods_Seb7a.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F571C570E428A6BD4D3AFD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76ED5E20637C496759DDE6E2 /* Pods-Seb7a.debug.xcconfig */,
+				B1D75A446D3A9C0216AE2BF0 /* Pods-Seb7a.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B310E7EE20FF966F007E346B = {
 			isa = PBXGroup;
 			children = (
 				B310E7F920FF966F007E346B /* Seb7a */,
 				B310E7F820FF966F007E346B /* Products */,
+				1F571C570E428A6BD4D3AFD7 /* Pods */,
+				0E6C8E60272CCC055C4B47BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B310E80C20FF9671007E346B /* Build configuration list for PBXNativeTarget "Seb7a" */;
 			buildPhases = (
+				55F9E1C017405C91471F49A5 /* [CP] Check Pods Manifest.lock */,
 				B310E7F320FF966F007E346B /* Sources */,
 				B310E7F420FF966F007E346B /* Frameworks */,
 				B310E7F520FF966F007E346B /* Resources */,
+				A2F9A162479D545441BA378C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55F9E1C017405C91471F49A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Seb7a-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2F9A162479D545441BA378C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Seb7a/Pods-Seb7a-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CircleProgressBar/CircleProgressBar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleProgressBar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Seb7a/Pods-Seb7a-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B310E7F320FF966F007E346B /* Sources */ = {
@@ -284,16 +349,14 @@
 		};
 		B310E80D20FF9671007E346B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76ED5E20637C496759DDE6E2 /* Pods-Seb7a.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8VXTMR4NKJ;
 				INFOPLIST_FILE = Seb7a/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.Seb7a;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -303,16 +366,14 @@
 		};
 		B310E80E20FF9671007E346B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D75A446D3A9C0216AE2BF0 /* Pods-Seb7a.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8VXTMR4NKJ;
 				INFOPLIST_FILE = Seb7a/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.Seb7a;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
