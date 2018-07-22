@@ -214,6 +214,15 @@ public class KDCircularProgress: UIView, CAAnimationDelegate {
         return KDCircularProgressViewLayer.self
     }
     
+    override public func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        let trackLineWidth = radius * trackThickness
+        let progressLineWidth = radius * progressThickness
+        let arcRadius = max(radius - trackLineWidth / 2, radius - progressLineWidth / 2)
+       let center = CGPoint(x: bounds.size.width / 2.0, y: bounds.size.height / 2.0)
+       // return super.point(inside: point, with: event)
+         return pow(center.x - point.x, 2) + pow(center.y - point.y,2) <= pow(arcRadius, 2)
+    }
+    
     public override func layoutSubviews() {
         super.layoutSubviews()
         radius = (frame.size.width / 2.0) * 0.8

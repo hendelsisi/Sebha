@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B398305D2104CB28004EE682 /* circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398305C2104CB28004EE682 /* circle.swift */; };
+		B398305D2104CB28004EE682 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398305C2104CB28004EE682 /* KDCircularProgress.swift */; };
+		B398306121050671004EE682 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398306021050671004EE682 /* StringExtension.swift */; };
 		B3B9BB5D2104B0010053863B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B9BB5C2104B0010053863B /* AppDelegate.swift */; };
 		B3B9BB5F2104B0010053863B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B9BB5E2104B0010053863B /* ViewController.swift */; };
 		B3B9BB622104B0010053863B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B9BB602104B0010053863B /* Main.storyboard */; };
@@ -35,7 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B398305C2104CB28004EE682 /* circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circle.swift; sourceTree = "<group>"; };
+		B398305C2104CB28004EE682 /* KDCircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
+		B398306021050671004EE682 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		B3B9BB592104B0010053863B /* Sebha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sebha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B9BB5C2104B0010053863B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3B9BB5E2104B0010053863B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B398305E2104DF51004EE682 /* KDCircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				B398305C2104CB28004EE682 /* KDCircularProgress.swift */,
+			);
+			name = KDCircularProgress;
+			sourceTree = "<group>";
+		};
+		B398305F21050617004EE682 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B398306021050671004EE682 /* StringExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		B3B9BB502104B0010053863B = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +117,14 @@
 		B3B9BB5B2104B0010053863B /* Sebha */ = {
 			isa = PBXGroup;
 			children = (
+				B398305F21050617004EE682 /* Extension */,
+				B398305E2104DF51004EE682 /* KDCircularProgress */,
 				B3B9BB5C2104B0010053863B /* AppDelegate.swift */,
 				B3B9BB5E2104B0010053863B /* ViewController.swift */,
 				B3B9BB602104B0010053863B /* Main.storyboard */,
 				B3B9BB632104B0020053863B /* Assets.xcassets */,
 				B3B9BB652104B0020053863B /* LaunchScreen.storyboard */,
 				B3B9BB682104B0020053863B /* Info.plist */,
-				B398305C2104CB28004EE682 /* circle.swift */,
 			);
 			path = Sebha;
 			sourceTree = "<group>";
@@ -259,7 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B398305D2104CB28004EE682 /* circle.swift in Sources */,
+				B398306121050671004EE682 /* StringExtension.swift in Sources */,
+				B398305D2104CB28004EE682 /* KDCircularProgress.swift in Sources */,
 				B3B9BB5F2104B0010053863B /* ViewController.swift in Sources */,
 				B3B9BB5D2104B0010053863B /* AppDelegate.swift in Sources */,
 			);
