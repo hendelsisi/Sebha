@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AADraggableView
 
 class ViewController: UIViewController,AADraggableViewDelegate {
 
