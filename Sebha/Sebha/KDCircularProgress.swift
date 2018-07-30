@@ -27,6 +27,7 @@ private extension Comparable {
 
 @IBDesignable
 public class KDCircularProgress: UIView, CAAnimationDelegate {
+
     private enum Conversion {
         static func degreesToRadians (value:CGFloat) -> CGFloat {
             return value * .pi / 180.0
@@ -74,7 +75,7 @@ public class KDCircularProgress: UIView, CAAnimationDelegate {
         }
     }
     
-    private var radius: CGFloat = 0 {
+     var radius: CGFloat = 0 {
         didSet {
             progressLayer.radius = radius
         }
@@ -181,9 +182,9 @@ public class KDCircularProgress: UIView, CAAnimationDelegate {
     
     //These are used only from the Interface-Builder. Changing these from code will have no effect.
     //Also IB colors are limited to 3, whereas programatically we can have an arbitrary number of them.
-    @objc @IBInspectable private var IBColor1: UIColor?
-    @objc @IBInspectable private var IBColor2: UIColor?
-    @objc @IBInspectable private var IBColor3: UIColor?
+    @objc var IBColor1: UIColor?
+    @objc var IBColor2: UIColor?
+    @objc var IBColor3: UIColor?
     
     private var animationCompletionBlock: ((Bool) -> Void)?
     
@@ -213,7 +214,7 @@ public class KDCircularProgress: UIView, CAAnimationDelegate {
     override public class var layerClass: AnyClass {
         return KDCircularProgressViewLayer.self
     }
-    
+    //Mark: - to allow circular gesture
     override public func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         let trackLineWidth = radius * trackThickness
         let progressLineWidth = radius * progressThickness
@@ -228,13 +229,13 @@ public class KDCircularProgress: UIView, CAAnimationDelegate {
         radius = (frame.size.width / 2.0) * 0.8
     }
     
-    private func setInitialValues() {
+     func setInitialValues() {
         radius = (frame.size.width / 2.0) * 0.8 //We always apply a 20% padding, stopping glows from being clipped
         backgroundColor = .clear
         set(colors: .white, .cyan)
     }
     
-    private func refreshValues() {
+     func refreshValues() {
         progressLayer.angle = angle
         progressLayer.startAngle = startAngle
         progressLayer.clockwise = clockwise
@@ -423,6 +424,7 @@ public class KDCircularProgress: UIView, CAAnimationDelegate {
             super.init(coder: aDecoder)
         }
         
+        
         override func draw(in ctx: CGContext) {
             UIGraphicsPushContext(ctx)
             
@@ -512,6 +514,7 @@ public class KDCircularProgress: UIView, CAAnimationDelegate {
             
             ctx.restoreGState()
             UIGraphicsPopContext()
+           
         }
         
         private func fillRectWith(context: CGContext!, color: UIColor) {

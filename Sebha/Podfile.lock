@@ -1,0 +1,16 @@
+PODS:
+  - AADraggableView (0.1.0)
+
+DEPENDENCIES:
+  - AADraggableView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AADraggableView
+
+SPEC CHECKSUMS:
+  AADraggableView: 7a4529e3bfda25141e927c2bc7977406abbf1cc5
+
+PODFILE CHECKSUM: 1754414fee719cf4829242419df35e2e53d128b2
+
+COCOAPODS: 1.5.3
