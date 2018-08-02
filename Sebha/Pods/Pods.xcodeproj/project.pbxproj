@@ -1,0 +1,939 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32EC7E2E413CE729CEB9B17D7F4B1224 /* HTPressableButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADDD0032FC4937DC9AB475394F70E5A /* HTPressableButton-dummy.m */; };
+		411E9B9E54287EAD5F8AE9632CD31274 /* UIImage+HTButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 74D92C367BF94D1BCDB8EC7136F2E108 /* UIImage+HTButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594AFC90252DF27EF9980DF30AB09764 /* Pods-SebhaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 853A7D6A7F6FD4066945B28DE4BADE66 /* Pods-SebhaUITests-dummy.m */; };
+		662D5EEC305FA2CC03A636EEA85B2EBF /* Pods-Sebha-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C063E2DE94625351CF0D956672F07C9 /* Pods-Sebha-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DDDA9B34A30E06E6552B618EEA43E7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		76EE9DC7EF57D251384707CDE6F9F752 /* Pods-SebhaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4EF0135FBAA1BD1C5E5D14247014DF8 /* Pods-SebhaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85A835D5F99F8AFFC4E09E2DF57E2458 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8F97AAB4C7C5B41616E89E372BEFF46E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		91341BA761BD1598AFE4710689C8FDF1 /* UIColor+HTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E33DC62ABD942E46012F719A8A9EEA36 /* UIColor+HTColor.m */; };
+		9728B90A6FF03BBCE8D3660A56975435 /* HTPressableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 117BBCC87B3E348BB10A2EE88631E106 /* HTPressableButton.m */; };
+		9F782FB51E05E4C05E730C77BEED42E9 /* Pods-SebhaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F29FBAE53B4D0EAA4388B26598EF82 /* Pods-SebhaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4AA43491F6D6A39AE2BA2EF64180882 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C05B4142DDAEA1AE3FC70599EB68B269 /* Pods-SebhaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB62A98CEF58FF2EDDC010B9DEEAF21 /* Pods-SebhaTests-dummy.m */; };
+		C69A624884CA5066763D1EB6E13C6366 /* HTPressableButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8040D2DBD7048C099081940BAD2DD13 /* HTPressableButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D385B791FF463E8AE7ED9EFC8358DFC5 /* UIColor+HTColor.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D9E9F4C662EB3037942990C456485E /* UIColor+HTColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D66E4F6E4B1361E12E106963E2FA6168 /* HTPressableButtonPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 100EFA26DB4B6BA86425FCEA3343B788 /* HTPressableButtonPrefs.m */; };
+		E0E3256AF5F4A1D98CD041CF91899AB0 /* UIImage+HTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41512A4E11FFA682EEC908D5ED2BE364 /* UIImage+HTButton.m */; };
+		E2D0E7803997E195AB8D6FC5446B83D1 /* Pods-Sebha-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FB8E4ADDD6E7670939CFD57DC58839 /* Pods-Sebha-dummy.m */; };
+		FB19F14CD51D3444E6C6802ACCBEC100 /* HTPressableButtonPrefs.h in Headers */ = {isa = PBXBuildFile; fileRef = F72FDA5A7B02B272926F03E5F9A4A8D7 /* HTPressableButtonPrefs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDFD1242343E512BF0513965CB003A32 /* HTPressableButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C75245CA8CA46F52B6220585E1B8D9BB /* HTPressableButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25D35A293826A0AEFCB9CDD60B40E5D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1CCE1AE2D0821E94DF4F05305E5E156;
+			remoteInfo = "Pods-Sebha";
+		};
+		550CFC9B377FEB50A239140F9EED214B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 131D7114AFD67BE676276B3D260CCA27;
+			remoteInfo = HTPressableButton;
+		};
+		908686F68AC6D29FF2D6C9D0D216564E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1CCE1AE2D0821E94DF4F05305E5E156;
+			remoteInfo = "Pods-Sebha";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07F29FBAE53B4D0EAA4388B26598EF82 /* Pods-SebhaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SebhaTests-umbrella.h"; sourceTree = "<group>"; };
+		0F2829D88449E0BAA41AC84A17360EC1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		100EFA26DB4B6BA86425FCEA3343B788 /* HTPressableButtonPrefs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTPressableButtonPrefs.m; path = Classes/HTPressableButtonPrefs.m; sourceTree = "<group>"; };
+		117BBCC87B3E348BB10A2EE88631E106 /* HTPressableButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTPressableButton.m; path = Classes/HTPressableButton.m; sourceTree = "<group>"; };
+		12BB534BC7A5DD5B6CB0D1634BF03C89 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234CDCB36781CEE2FCF6FBABB537CAD7 /* Pods-SebhaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SebhaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		29216F37DB845247FBB3E03185780E53 /* Pods_Sebha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Sebha.framework; path = "Pods-Sebha.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29DC934E4EB6BA4E4F2E6844ADCE76B9 /* Pods-Sebha-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sebha-resources.sh"; sourceTree = "<group>"; };
+		2ADDD0032FC4937DC9AB475394F70E5A /* HTPressableButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTPressableButton-dummy.m"; sourceTree = "<group>"; };
+		2B96C70FB5D920137EA42C8D581956B5 /* Pods-SebhaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SebhaTests-frameworks.sh"; sourceTree = "<group>"; };
+		2C592B183A2CF7E2AABAAE07CD9ACFB2 /* Pods_SebhaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SebhaTests.framework; path = "Pods-SebhaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		301BF37C003071FD69C32496686E1495 /* Pods_SebhaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SebhaUITests.framework; path = "Pods-SebhaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A4448D7AFD9331F802D1246D725E646 /* Pods-SebhaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SebhaUITests-resources.sh"; sourceTree = "<group>"; };
+		41512A4E11FFA682EEC908D5ED2BE364 /* UIImage+HTButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+HTButton.m"; path = "Classes/UIImage+HTButton.m"; sourceTree = "<group>"; };
+		43F985064658081C5D7781CD38748243 /* HTPressableButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTPressableButton-prefix.pch"; sourceTree = "<group>"; };
+		50A6287A73CF3C171889BEE281F009B7 /* HTPressableButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTPressableButton.xcconfig; sourceTree = "<group>"; };
+		56CB65BE2DE9AE85F171F9A875ECBAFA /* Pods-Sebha-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sebha-frameworks.sh"; sourceTree = "<group>"; };
+		61A606CC3E9058B1532968DA46AB622E /* Pods-SebhaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SebhaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		651F5F2BC9AED0A9AE3A9FCF2245F33A /* Pods-Sebha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sebha.debug.xcconfig"; sourceTree = "<group>"; };
+		65881C5F447885165003245E1D4404BE /* Pods-Sebha.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sebha.modulemap"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		69FB8E4ADDD6E7670939CFD57DC58839 /* Pods-Sebha-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sebha-dummy.m"; sourceTree = "<group>"; };
+		6C063E2DE94625351CF0D956672F07C9 /* Pods-Sebha-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sebha-umbrella.h"; sourceTree = "<group>"; };
+		716ADB84B500492E7776D33E8FF7BC8E /* Pods-SebhaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SebhaTests.release.xcconfig"; sourceTree = "<group>"; };
+		71BD5E8B224CC9F04EDE60AAFDA670F8 /* Pods-Sebha-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sebha-acknowledgements.markdown"; sourceTree = "<group>"; };
+		74D92C367BF94D1BCDB8EC7136F2E108 /* UIImage+HTButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+HTButton.h"; path = "Classes/UIImage+HTButton.h"; sourceTree = "<group>"; };
+		81A423A575458C44F96CCC23CEA72651 /* Pods-SebhaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SebhaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		823280434FDE2EC572C294957B9F9E99 /* Pods-SebhaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SebhaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		853A7D6A7F6FD4066945B28DE4BADE66 /* Pods-SebhaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SebhaUITests-dummy.m"; sourceTree = "<group>"; };
+		85C40E586BDA515C6EA8FD3F1B4C4583 /* Pods-SebhaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SebhaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8CDDF6B6F6507E824F32481F4F08AAC0 /* Pods-SebhaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SebhaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8DA4E7922DD8E198A4DC863F587221A3 /* HTPressableButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HTPressableButton.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AB62A98CEF58FF2EDDC010B9DEEAF21 /* Pods-SebhaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SebhaTests-dummy.m"; sourceTree = "<group>"; };
+		9C359BDE18B1C9733361807156D36FF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FED637A39A5CCAB7184F7A4E07CAA00 /* Pods-Sebha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sebha.release.xcconfig"; sourceTree = "<group>"; };
+		A5D9E9F4C662EB3037942990C456485E /* UIColor+HTColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+HTColor.h"; path = "Classes/UIColor+HTColor.h"; sourceTree = "<group>"; };
+		BE1E6C11BC557396DEA5BB8013ACA6E9 /* Pods-SebhaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SebhaUITests.modulemap"; sourceTree = "<group>"; };
+		C03BA9C827ED553CDCC7C97A44804506 /* Pods-SebhaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SebhaTests-resources.sh"; sourceTree = "<group>"; };
+		C2DEFA30E2C9BAA354461E29B5B7CB22 /* Pods-SebhaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SebhaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4EF0135FBAA1BD1C5E5D14247014DF8 /* Pods-SebhaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SebhaUITests-umbrella.h"; sourceTree = "<group>"; };
+		C75245CA8CA46F52B6220585E1B8D9BB /* HTPressableButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTPressableButton.h; path = Classes/HTPressableButton.h; sourceTree = "<group>"; };
+		D8040D2DBD7048C099081940BAD2DD13 /* HTPressableButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTPressableButton-umbrella.h"; sourceTree = "<group>"; };
+		DA6CC7D857F9F2A87FA115A1A439F442 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E33DC62ABD942E46012F719A8A9EEA36 /* UIColor+HTColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HTColor.m"; path = "Classes/UIColor+HTColor.m"; sourceTree = "<group>"; };
+		E87BA2A24B9E0CA37FB0C469A2AA2179 /* Pods-SebhaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SebhaTests.modulemap"; sourceTree = "<group>"; };
+		EF3260101F18755EBA85769B208FEE48 /* HTPressableButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HTPressableButton.framework; path = HTPressableButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F132419FE36057E30CD4DCC0EEB392E2 /* Pods-Sebha-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sebha-acknowledgements.plist"; sourceTree = "<group>"; };
+		F72FDA5A7B02B272926F03E5F9A4A8D7 /* HTPressableButtonPrefs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTPressableButtonPrefs.h; path = Classes/HTPressableButtonPrefs.h; sourceTree = "<group>"; };
+		FFA96628A99E24D6500822CB652ACF97 /* Pods-SebhaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SebhaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2644A20F5C168BA1DC39270240C2CC55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AA43491F6D6A39AE2BA2EF64180882 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F010F064A3ECE050BDB18D22007EA68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A835D5F99F8AFFC4E09E2DF57E2458 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485D388B92433856F71CECCBF04E5BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F97AAB4C7C5B41616E89E372BEFF46E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF43B56D84465C6D2AE75A8D67DE1238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DDDA9B34A30E06E6552B618EEA43E7D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01EA9C400C033D03B6E1F570800165B5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4E5EF3CCC3B4F621F454A7DC0CA9C43 /* Pods-Sebha */,
+				C8148BDA8295C4DE6AF76CED74B35967 /* Pods-SebhaTests */,
+				77E9AD89049164CBCD928770DA10EA8A /* Pods-SebhaUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		03D283288DA1ACE11CE7D765AA3F1629 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				C75245CA8CA46F52B6220585E1B8D9BB /* HTPressableButton.h */,
+				117BBCC87B3E348BB10A2EE88631E106 /* HTPressableButton.m */,
+				F72FDA5A7B02B272926F03E5F9A4A8D7 /* HTPressableButtonPrefs.h */,
+				100EFA26DB4B6BA86425FCEA3343B788 /* HTPressableButtonPrefs.m */,
+				A5D9E9F4C662EB3037942990C456485E /* UIColor+HTColor.h */,
+				E33DC62ABD942E46012F719A8A9EEA36 /* UIColor+HTColor.m */,
+				74D92C367BF94D1BCDB8EC7136F2E108 /* UIImage+HTButton.h */,
+				41512A4E11FFA682EEC908D5ED2BE364 /* UIImage+HTButton.m */,
+			);
+			name = All;
+			sourceTree = "<group>";
+		};
+		20E621F0E847D035150518AF970E9F59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF3260101F18755EBA85769B208FEE48 /* HTPressableButton.framework */,
+				29216F37DB845247FBB3E03185780E53 /* Pods_Sebha.framework */,
+				2C592B183A2CF7E2AABAAE07CD9ACFB2 /* Pods_SebhaTests.framework */,
+				301BF37C003071FD69C32496686E1495 /* Pods_SebhaUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		552EDC9EC6255206CB0519F4D6B9FC43 /* HTPressableButton */ = {
+			isa = PBXGroup;
+			children = (
+				03D283288DA1ACE11CE7D765AA3F1629 /* All */,
+				CB4969F60AA1BA977E662A89B32EE485 /* Support Files */,
+			);
+			name = HTPressableButton;
+			path = HTPressableButton;
+			sourceTree = "<group>";
+		};
+		77E9AD89049164CBCD928770DA10EA8A /* Pods-SebhaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0F2829D88449E0BAA41AC84A17360EC1 /* Info.plist */,
+				BE1E6C11BC557396DEA5BB8013ACA6E9 /* Pods-SebhaUITests.modulemap */,
+				FFA96628A99E24D6500822CB652ACF97 /* Pods-SebhaUITests-acknowledgements.markdown */,
+				8CDDF6B6F6507E824F32481F4F08AAC0 /* Pods-SebhaUITests-acknowledgements.plist */,
+				853A7D6A7F6FD4066945B28DE4BADE66 /* Pods-SebhaUITests-dummy.m */,
+				823280434FDE2EC572C294957B9F9E99 /* Pods-SebhaUITests-frameworks.sh */,
+				3A4448D7AFD9331F802D1246D725E646 /* Pods-SebhaUITests-resources.sh */,
+				C4EF0135FBAA1BD1C5E5D14247014DF8 /* Pods-SebhaUITests-umbrella.h */,
+				C2DEFA30E2C9BAA354461E29B5B7CB22 /* Pods-SebhaUITests.debug.xcconfig */,
+				234CDCB36781CEE2FCF6FBABB537CAD7 /* Pods-SebhaUITests.release.xcconfig */,
+			);
+			name = "Pods-SebhaUITests";
+			path = "Target Support Files/Pods-SebhaUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B0EFA233CE769FBF1B890ED63E5795F7 /* Pods */,
+				20E621F0E847D035150518AF970E9F59 /* Products */,
+				01EA9C400C033D03B6E1F570800165B5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B0EFA233CE769FBF1B890ED63E5795F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				552EDC9EC6255206CB0519F4D6B9FC43 /* HTPressableButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4E5EF3CCC3B4F621F454A7DC0CA9C43 /* Pods-Sebha */ = {
+			isa = PBXGroup;
+			children = (
+				DA6CC7D857F9F2A87FA115A1A439F442 /* Info.plist */,
+				65881C5F447885165003245E1D4404BE /* Pods-Sebha.modulemap */,
+				71BD5E8B224CC9F04EDE60AAFDA670F8 /* Pods-Sebha-acknowledgements.markdown */,
+				F132419FE36057E30CD4DCC0EEB392E2 /* Pods-Sebha-acknowledgements.plist */,
+				69FB8E4ADDD6E7670939CFD57DC58839 /* Pods-Sebha-dummy.m */,
+				56CB65BE2DE9AE85F171F9A875ECBAFA /* Pods-Sebha-frameworks.sh */,
+				29DC934E4EB6BA4E4F2E6844ADCE76B9 /* Pods-Sebha-resources.sh */,
+				6C063E2DE94625351CF0D956672F07C9 /* Pods-Sebha-umbrella.h */,
+				651F5F2BC9AED0A9AE3A9FCF2245F33A /* Pods-Sebha.debug.xcconfig */,
+				9FED637A39A5CCAB7184F7A4E07CAA00 /* Pods-Sebha.release.xcconfig */,
+			);
+			name = "Pods-Sebha";
+			path = "Target Support Files/Pods-Sebha";
+			sourceTree = "<group>";
+		};
+		C8148BDA8295C4DE6AF76CED74B35967 /* Pods-SebhaTests */ = {
+			isa = PBXGroup;
+			children = (
+				12BB534BC7A5DD5B6CB0D1634BF03C89 /* Info.plist */,
+				E87BA2A24B9E0CA37FB0C469A2AA2179 /* Pods-SebhaTests.modulemap */,
+				85C40E586BDA515C6EA8FD3F1B4C4583 /* Pods-SebhaTests-acknowledgements.markdown */,
+				81A423A575458C44F96CCC23CEA72651 /* Pods-SebhaTests-acknowledgements.plist */,
+				9AB62A98CEF58FF2EDDC010B9DEEAF21 /* Pods-SebhaTests-dummy.m */,
+				2B96C70FB5D920137EA42C8D581956B5 /* Pods-SebhaTests-frameworks.sh */,
+				C03BA9C827ED553CDCC7C97A44804506 /* Pods-SebhaTests-resources.sh */,
+				07F29FBAE53B4D0EAA4388B26598EF82 /* Pods-SebhaTests-umbrella.h */,
+				61A606CC3E9058B1532968DA46AB622E /* Pods-SebhaTests.debug.xcconfig */,
+				716ADB84B500492E7776D33E8FF7BC8E /* Pods-SebhaTests.release.xcconfig */,
+			);
+			name = "Pods-SebhaTests";
+			path = "Target Support Files/Pods-SebhaTests";
+			sourceTree = "<group>";
+		};
+		CB4969F60AA1BA977E662A89B32EE485 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DA4E7922DD8E198A4DC863F587221A3 /* HTPressableButton.modulemap */,
+				50A6287A73CF3C171889BEE281F009B7 /* HTPressableButton.xcconfig */,
+				2ADDD0032FC4937DC9AB475394F70E5A /* HTPressableButton-dummy.m */,
+				43F985064658081C5D7781CD38748243 /* HTPressableButton-prefix.pch */,
+				D8040D2DBD7048C099081940BAD2DD13 /* HTPressableButton-umbrella.h */,
+				9C359BDE18B1C9733361807156D36FF4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HTPressableButton";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BC6634C9692B7E15835E5DB79226C65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C69A624884CA5066763D1EB6E13C6366 /* HTPressableButton-umbrella.h in Headers */,
+				FDFD1242343E512BF0513965CB003A32 /* HTPressableButton.h in Headers */,
+				FB19F14CD51D3444E6C6802ACCBEC100 /* HTPressableButtonPrefs.h in Headers */,
+				D385B791FF463E8AE7ED9EFC8358DFC5 /* UIColor+HTColor.h in Headers */,
+				411E9B9E54287EAD5F8AE9632CD31274 /* UIImage+HTButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		596D9C32006FB43346D54D878C54F360 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F782FB51E05E4C05E730C77BEED42E9 /* Pods-SebhaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898497B2E95B58E54834EBF86D4E2C21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				662D5EEC305FA2CC03A636EEA85B2EBF /* Pods-Sebha-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A889E376BC152BDFFBB0AF4269C09C40 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76EE9DC7EF57D251384707CDE6F9F752 /* Pods-SebhaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		131D7114AFD67BE676276B3D260CCA27 /* HTPressableButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D5FB1D8BB2149DE916C3F1F889049F8 /* Build configuration list for PBXNativeTarget "HTPressableButton" */;
+			buildPhases = (
+				92F8BFE6E30E469D8AB0807034832DBC /* Sources */,
+				2F010F064A3ECE050BDB18D22007EA68 /* Frameworks */,
+				1BC6634C9692B7E15835E5DB79226C65 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTPressableButton;
+			productName = HTPressableButton;
+			productReference = EF3260101F18755EBA85769B208FEE48 /* HTPressableButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		922701056AAA1A4E0A10F08FE832A2E8 /* Pods-SebhaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D0A12080C508169E881A2135E9C330B /* Build configuration list for PBXNativeTarget "Pods-SebhaUITests" */;
+			buildPhases = (
+				948C4644C228F92C691F861D624D4A9C /* Sources */,
+				2644A20F5C168BA1DC39270240C2CC55 /* Frameworks */,
+				A889E376BC152BDFFBB0AF4269C09C40 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61A8F9564D73F355135CC5FF4D196315 /* PBXTargetDependency */,
+			);
+			name = "Pods-SebhaUITests";
+			productName = "Pods-SebhaUITests";
+			productReference = 301BF37C003071FD69C32496686E1495 /* Pods_SebhaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EACF7A87A8B44B4018E80F7586E50866 /* Pods-SebhaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368560AB4B21FED48363B383FDF3A3B0 /* Build configuration list for PBXNativeTarget "Pods-SebhaTests" */;
+			buildPhases = (
+				64AAA1C3FD3241A87006CF76B9DF4A07 /* Sources */,
+				BF43B56D84465C6D2AE75A8D67DE1238 /* Frameworks */,
+				596D9C32006FB43346D54D878C54F360 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32A1449B8ED096DDFF245BC27021300 /* PBXTargetDependency */,
+			);
+			name = "Pods-SebhaTests";
+			productName = "Pods-SebhaTests";
+			productReference = 2C592B183A2CF7E2AABAAE07CD9ACFB2 /* Pods_SebhaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1CCE1AE2D0821E94DF4F05305E5E156 /* Pods-Sebha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCFEE12BC7ED94EFD58405730D786B6F /* Build configuration list for PBXNativeTarget "Pods-Sebha" */;
+			buildPhases = (
+				8BB5FC8530611BA6F1A5DC5EEAE1A6C8 /* Sources */,
+				485D388B92433856F71CECCBF04E5BE5 /* Frameworks */,
+				898497B2E95B58E54834EBF86D4E2C21 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1923AC74B9F610A81BFAAC6C972746BC /* PBXTargetDependency */,
+			);
+			name = "Pods-Sebha";
+			productName = "Pods-Sebha";
+			productReference = 29216F37DB845247FBB3E03185780E53 /* Pods_Sebha.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 20E621F0E847D035150518AF970E9F59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				131D7114AFD67BE676276B3D260CCA27 /* HTPressableButton */,
+				F1CCE1AE2D0821E94DF4F05305E5E156 /* Pods-Sebha */,
+				EACF7A87A8B44B4018E80F7586E50866 /* Pods-SebhaTests */,
+				922701056AAA1A4E0A10F08FE832A2E8 /* Pods-SebhaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64AAA1C3FD3241A87006CF76B9DF4A07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C05B4142DDAEA1AE3FC70599EB68B269 /* Pods-SebhaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB5FC8530611BA6F1A5DC5EEAE1A6C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D0E7803997E195AB8D6FC5446B83D1 /* Pods-Sebha-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F8BFE6E30E469D8AB0807034832DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32EC7E2E413CE729CEB9B17D7F4B1224 /* HTPressableButton-dummy.m in Sources */,
+				9728B90A6FF03BBCE8D3660A56975435 /* HTPressableButton.m in Sources */,
+				D66E4F6E4B1361E12E106963E2FA6168 /* HTPressableButtonPrefs.m in Sources */,
+				91341BA761BD1598AFE4710689C8FDF1 /* UIColor+HTColor.m in Sources */,
+				E0E3256AF5F4A1D98CD041CF91899AB0 /* UIImage+HTButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948C4644C228F92C691F861D624D4A9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				594AFC90252DF27EF9980DF30AB09764 /* Pods-SebhaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1923AC74B9F610A81BFAAC6C972746BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HTPressableButton;
+			target = 131D7114AFD67BE676276B3D260CCA27 /* HTPressableButton */;
+			targetProxy = 550CFC9B377FEB50A239140F9EED214B /* PBXContainerItemProxy */;
+		};
+		61A8F9564D73F355135CC5FF4D196315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Sebha";
+			target = F1CCE1AE2D0821E94DF4F05305E5E156 /* Pods-Sebha */;
+			targetProxy = 908686F68AC6D29FF2D6C9D0D216564E /* PBXContainerItemProxy */;
+		};
+		D32A1449B8ED096DDFF245BC27021300 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Sebha";
+			target = F1CCE1AE2D0821E94DF4F05305E5E156 /* Pods-Sebha */;
+			targetProxy = 25D35A293826A0AEFCB9CDD60B40E5D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		228FB9955B476512D2C80840647D4658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50A6287A73CF3C171889BEE281F009B7 /* HTPressableButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HTPressableButton/HTPressableButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HTPressableButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HTPressableButton/HTPressableButton.modulemap";
+				PRODUCT_MODULE_NAME = HTPressableButton;
+				PRODUCT_NAME = HTPressableButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		591422CE27014BEE84BFC31CD2E2B1CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716ADB84B500492E7776D33E8FF7BC8E /* Pods-SebhaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SebhaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SebhaTests/Pods-SebhaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F8218A916863856FBDDF3FA2E90CDC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FED637A39A5CCAB7184F7A4E07CAA00 /* Pods-Sebha.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sebha/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sebha/Pods-Sebha.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6461827C36CF6D78B612B439C4D12CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2DEFA30E2C9BAA354461E29B5B7CB22 /* Pods-SebhaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SebhaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SebhaUITests/Pods-SebhaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		67B0318CF5BD5A57BFA300C62A7788A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50A6287A73CF3C171889BEE281F009B7 /* HTPressableButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HTPressableButton/HTPressableButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HTPressableButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HTPressableButton/HTPressableButton.modulemap";
+				PRODUCT_MODULE_NAME = HTPressableButton;
+				PRODUCT_NAME = HTPressableButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		703082A85162812D3B777E668767AD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8ADD887EEADE39464C94541FA6CAA75B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 651F5F2BC9AED0A9AE3A9FCF2245F33A /* Pods-Sebha.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sebha/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sebha/Pods-Sebha.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9FE81A45A2B4D4F5D39D0895C73F0CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234CDCB36781CEE2FCF6FBABB537CAD7 /* Pods-SebhaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SebhaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SebhaUITests/Pods-SebhaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F258CF98297A725D7A0D725F501332AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61A606CC3E9058B1532968DA46AB622E /* Pods-SebhaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SebhaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SebhaTests/Pods-SebhaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */,
+				703082A85162812D3B777E668767AD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368560AB4B21FED48363B383FDF3A3B0 /* Build configuration list for PBXNativeTarget "Pods-SebhaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F258CF98297A725D7A0D725F501332AE /* Debug */,
+				591422CE27014BEE84BFC31CD2E2B1CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D0A12080C508169E881A2135E9C330B /* Build configuration list for PBXNativeTarget "Pods-SebhaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6461827C36CF6D78B612B439C4D12CD7 /* Debug */,
+				E9FE81A45A2B4D4F5D39D0895C73F0CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D5FB1D8BB2149DE916C3F1F889049F8 /* Build configuration list for PBXNativeTarget "HTPressableButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B0318CF5BD5A57BFA300C62A7788A1 /* Debug */,
+				228FB9955B476512D2C80840647D4658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCFEE12BC7ED94EFD58405730D786B6F /* Build configuration list for PBXNativeTarget "Pods-Sebha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ADD887EEADE39464C94541FA6CAA75B /* Debug */,
+				5F8218A916863856FBDDF3FA2E90CDC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

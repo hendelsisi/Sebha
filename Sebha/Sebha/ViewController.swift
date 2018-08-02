@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController,AADraggableViewDelegate {
 
-   fileprivate  var currentCount = 0
+    @IBOutlet weak var testtt: UIView!
+    fileprivate  var currentCount = 0
    fileprivate var currentDigitCount = 2
    fileprivate  var currentIndexCount = 0.0
     {
@@ -28,7 +29,11 @@ class ViewController: UIViewController,AADraggableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var progress = InteractiveView.init(frame: CGRect.init(x: self.view.center.x,y: self.view.center.y, width: 220, height: 260))
+        var progress = InteractiveView.init(frame: CGRect.init(x: self.view.center.x,y: self.view.center.y, width: 150, height: 150))
+        if Device.IS_5_5_INCHES() || Device.IS_4_7_INCHES() || Device.IS_5_8_INCHES(){
+            progress = InteractiveView.init(frame: CGRect.init(x: self.view.center.x,y: self.view.center.y, width: 200, height: 200))
+        }
+        
         progress.center = self.view.center
        
         progress.respectedView = self.view

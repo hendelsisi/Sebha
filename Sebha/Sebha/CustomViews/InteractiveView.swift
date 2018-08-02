@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import HTPressableButton
 //import AADraggableView
 
 class InteractiveView: KDCircularProgress {
@@ -43,55 +44,116 @@ class InteractiveView: KDCircularProgress {
                                       action: #selector(self.touchHandler(_:)))
     }
     
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        if Device.IS_4_7_INCHES(){
+            radius = 87
+        }
+        else if Device.IS_5_5_INCHES(){
+            radius = 95
+        }
+        else if Device.IS_5_8_INCHES(){
+             radius = 83
+        }
+        else{
+            radius = 65
+        }
+    }
+    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         trackThickness = 0.07
         progressThickness = 0.07
-        progressInsideFillColor = UIColor.darkGray
-        trackColor = UIColor.lightGray
-        padding = -20.0
+        progressInsideFillColor = UIColor.clear
+        trackColor = UIColor.white
+        padding = 55.0
+        if Device.IS_4_7_INCHES(){
+             padding = 70.0
+        }
+        else if Device.IS_5_5_INCHES(){
+            padding = 90.0
+        }
+        else if Device.IS_5_8_INCHES(){
+             padding = 65.0
+        }
         reposition = .sticky
-        progressColors = [UIColor.black]
+        progressColors = [UIColor.color(fromHexString: "#329bc6")]
         glowMode = .noGlow
-         setupTapGesture()
-        
-        let viewWidth = self.frame.size.width
+        let viewWidth  = self.frame.size.width
         let viewHeight = self.frame.size.height
-//        print("width \(viewWidth)")
-//        print("height \(viewHeight)")
+        //make it from equation
+        print("hi :\(UIScreen.main.bounds.height)")
+        var imgBorderXpos = (viewWidth / 2.0) - 130
+        var imgBorderYpos = (viewHeight / 2.0) - 130
+        var imgBorderWidth = frame.width + 110
+        var imgBorderHeight = frame.height + 110
+        if Device.IS_4_7_INCHES()
+        {
+             imgBorderXpos = (viewWidth / 2.0) - 175
+             imgBorderYpos = (viewHeight / 2.0) - 175
+             imgBorderWidth = frame.width + 150
+             imgBorderHeight = frame.height + 150
+        }
+        else if Device.IS_5_5_INCHES(){
+            imgBorderXpos = (viewWidth / 2.0) - 190
+            imgBorderYpos = (viewHeight / 2.0) - 190
+            imgBorderWidth = frame.width + 180
+            imgBorderHeight = frame.height + 180
+        }
+        else if Device.IS_5_8_INCHES(){
+            imgBorderXpos = (viewWidth / 2.0) - 165
+            imgBorderYpos = (viewHeight / 2.0) - 165
+            imgBorderWidth = frame.width + 130
+            imgBorderHeight = frame.height + 130
+        }
+        let img = UIImageView.init(frame: CGRect.init(x:imgBorderXpos , y:imgBorderYpos , width:imgBorderWidth , height: imgBorderHeight))
+     
+        img.image = UIImage.init(named: "better")
+         addSubview(img)
+        //add shadow button
+         let circularButton = HTPressableButton(frame: CGRect.init(x: (viewWidth / 2.0) - 61, y: (viewHeight / 2.0) - 62, width: 123, height: 123), buttonStyle: .circular)
+        circularButton?.buttonColor = UIColor.color(fromHexString: "#efded5")
+        circularButton?.shadowColor = UIColor.color(fromHexString: "#d1bbaf")
+        circularButton?.disabledButtonColor = UIColor.white
+        circularButton?.addTarget(self, action: Selector("clickButton:"), for: .touchUpInside)
+        
+        let LPressGesture = UILongPressGestureRecognizer(target: self, action: #selector((InteractiveView.handleLongPress(LPressGesture:))))
+        circularButton?.addGestureRecognizer(LPressGesture)
+            addSubview(circularButton!)
+        /////////////////////////
+        setupTapGesture()
         let labelWidth:CGFloat = 140.0
         let labelHeight:CGFloat = 80.0
         let xpos = (viewWidth / 2.0) - (labelWidth / 2.0)
         let ypos = (viewHeight / 2.0) - (labelHeight / 2.0)
         arabicOutput.frame = CGRect(x: xpos, y: ypos, width: labelWidth, height: labelHeight)
-//        print("x : \(self.center.x)")
-//        print("y : \(self.center.y)")
-//   arabicOutput.frame = CGRect.init(x: self.center.x, y: self.center.y, width: 140, height: 80)
         arabicOutput.textAlignment = .center
         arabicOutput.font = UIFont.systemFont(ofSize: 70.0, weight: .regular)
-       // arabicOutput.text =  String(Int(currentCount)).replacedEnglishDigitsWithArabic
         arabicOutput.textColor = UIColor.white
-       //  arabicOutput.center = self.center
-        
        addSubview(arabicOutput)
-        
-    //   progress = KDCircularProgress.init(frame: frame, colors: UIColor.black,UIColor.black,UIColor.black)
-////        progress?.IBColor1 =
-////        progress?.IBColor2 =
-////        progress?.IBColor3 =
-//      //  set thickness
-//      //  dragView = AADraggableView.init(frame: frame)
+    }
+    
+    @objc func clickButton(_ sender: Any?){
+        if (currentIndexCount == maxIndexCount) {
+            currentCount += 1
+            
+            resizeCounterLabel()
+            self.animate(fromAngle: self.angle, toAngle: 0, duration: 0.5, completion: nil)
+            currentIndexCount = 0
+            print("sdfdsf \(arabicOutput.font.pointSize)")
+        }
+        else{
+            currentCount += 1
+            currentIndexCount += 1
+            let newAngleValue = newAngle()
+            self.animate(toAngle: newAngleValue, duration: 0.5, completion: nil)
+        }
     }
     
     required public init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-//     override func draw(_ rect: CGRect) {
-//        super.draw(rect)
-//        print("draw here")
-//        setupTapGesture()
-//    }
 
     /// Add or remove pan gesture as required
     func setupTapGesture() {
@@ -100,11 +162,6 @@ class InteractiveView: KDCircularProgress {
             return
         }
         addGestureRecognizer(panGesture)
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector((InteractiveView.handleTap(tapGesture:))))
-        let LPressGesture = UILongPressGestureRecognizer(target: self, action: #selector((InteractiveView.handleLongPress(LPressGesture:))))
-        
-            addGestureRecognizer(LPressGesture)
-            addGestureRecognizer(tapGesture)
     }
     
     //Mark: - Handle Gesture

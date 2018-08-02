@@ -75,7 +75,7 @@ public class KDCircularProgress: UIView, CAAnimationDelegate {
         }
     }
     
-     var radius: CGFloat = 0 {
+    public var radius: CGFloat = 0 {
         didSet {
             progressLayer.radius = radius
         }
@@ -231,6 +231,7 @@ public class KDCircularProgress: UIView, CAAnimationDelegate {
     
      func setInitialValues() {
         radius = (frame.size.width / 2.0) * 0.8 //We always apply a 20% padding, stopping glows from being clipped
+
         backgroundColor = .clear
         set(colors: .white, .cyan)
     }

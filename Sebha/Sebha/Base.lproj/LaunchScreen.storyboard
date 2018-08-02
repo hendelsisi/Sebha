@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-07-30 at 4.41.29 PM" translatesAutoresizingMaskIntoConstraints="NO" id="uWP-Rr-6Ff">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="better" translatesAutoresizingMaskIntoConstraints="NO" id="uWP-Rr-6Ff">
                                 <rect key="frame" x="0.0" y="193.5" width="375" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="PVD-i1-ewo"/>
@@ -40,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2018-07-30 at 4.41.29 PM" width="1114" height="1116"/>
+        <image name="better" width="1043" height="1045"/>
     </resources>
 </document>
