@@ -12,9 +12,7 @@ import HTPressableButton
 //import AADraggableView
 
 class InteractiveView: KDCircularProgress {
-  // var progress:KDCircularProgress?
-   // var dragView:AADraggableView?
-      
+    var flowerWall:UIImageView?
     var padding: CGFloat = 0.0
     var delegate: AADraggableViewDelegate?
     var duration: TimeInterval = 0.1
@@ -106,10 +104,10 @@ class InteractiveView: KDCircularProgress {
             imgBorderWidth = frame.width + 130
             imgBorderHeight = frame.height + 130
         }
-        let img = UIImageView.init(frame: CGRect.init(x:imgBorderXpos , y:imgBorderYpos , width:imgBorderWidth , height: imgBorderHeight))
+        flowerWall = UIImageView.init(frame: CGRect.init(x:imgBorderXpos , y:imgBorderYpos , width:imgBorderWidth , height: imgBorderHeight))
      
-        img.image = UIImage.init(named: "better")
-         addSubview(img)
+        flowerWall?.image = UIImage.init(named: "better")
+        addSubview(flowerWall!)
         //add shadow button
          let circularButton = HTPressableButton(frame: CGRect.init(x: (viewWidth / 2.0) - 61, y: (viewHeight / 2.0) - 62, width: 123, height: 123), buttonStyle: .circular)
         circularButton?.buttonColor = UIColor.color(fromHexString: "#efded5")
@@ -128,12 +126,13 @@ class InteractiveView: KDCircularProgress {
         let ypos = (viewHeight / 2.0) - (labelHeight / 2.0)
         arabicOutput.frame = CGRect(x: xpos, y: ypos, width: labelWidth, height: labelHeight)
         arabicOutput.textAlignment = .center
-        arabicOutput.font = UIFont.systemFont(ofSize: 70.0, weight: .regular)
+        arabicOutput.font = UIFont.systemFont(ofSize: 60.0, weight: .regular)
         arabicOutput.textColor = UIColor.white
        addSubview(arabicOutput)
     }
     
     @objc func clickButton(_ sender: Any?){
+        flowerWall?.glowOnce()
         if (currentIndexCount == maxIndexCount) {
             currentCount += 1
             
@@ -191,7 +190,7 @@ class InteractiveView: KDCircularProgress {
     func resizeCounterLabel(){
         if currentCount.digitCount > currentDigitCount{
             currentDigitCount = currentCount.digitCount
-            if arabicOutput.font.pointSize != 35{
+            if arabicOutput.font.pointSize != 30{
                 arabicOutput.font = UIFont.systemFont(ofSize: arabicOutput.font.pointSize - 5, weight:.regular)
             }
         }

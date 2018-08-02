@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		280FAA39B38207A19E61E3A5 /* Pods_SebhaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBACA16445C0686255AA7D0 /* Pods_SebhaUITests.framework */; };
 		31FC18850F9B87621667BEA2 /* Pods_SebhaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA50A5CEF9D93D6B8E1D28F /* Pods_SebhaTests.framework */; };
+		B32B13672113865600088442 /* UIView+Glow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32B13662113865600088442 /* UIView+Glow.swift */; };
 		B34DBE86211229290032A110 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DBE85211229290032A110 /* Device.swift */; };
 		B34DBE8A211268440032A110 /* NumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DBE88211268440032A110 /* NumberExtension.swift */; };
 		B34DBE8B211268440032A110 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DBE89211268440032A110 /* StringExtension.swift */; };
@@ -48,6 +49,7 @@
 		814DC26F21DDFE09E612AC79 /* Pods-Sebha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sebha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sebha/Pods-Sebha.release.xcconfig"; sourceTree = "<group>"; };
 		91A1F072E367D66292AEBD0A /* Pods-SebhaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SebhaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SebhaTests/Pods-SebhaTests.release.xcconfig"; sourceTree = "<group>"; };
 		9D7BFB85002B466E66D15CD1 /* Pods_Sebha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sebha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32B13662113865600088442 /* UIView+Glow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Glow.swift"; sourceTree = "<group>"; };
 		B34DBE85211229290032A110 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		B34DBE88211268440032A110 /* NumberExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberExtension.swift; sourceTree = "<group>"; };
 		B34DBE89211268440032A110 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		B34DBE87211268440032A110 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B32B13662113865600088442 /* UIView+Glow.swift */,
 				B34DBE91211268960032A110 /* ColorExtension.swift */,
 				B34DBE88211268440032A110 /* NumberExtension.swift */,
 				B34DBE89211268440032A110 /* StringExtension.swift */,
@@ -422,6 +425,7 @@
 				B34DBE8F211268820032A110 /* KDCircularProgress.swift in Sources */,
 				B34DBE8B211268440032A110 /* StringExtension.swift in Sources */,
 				B3B9BB5F2104B0010053863B /* ViewController.swift in Sources */,
+				B32B13672113865600088442 /* UIView+Glow.swift in Sources */,
 				B34DBE92211268960032A110 /* ColorExtension.swift in Sources */,
 				B34DBE90211268820032A110 /* InteractiveView.swift in Sources */,
 				B34DBE8A211268440032A110 /* NumberExtension.swift in Sources */,
