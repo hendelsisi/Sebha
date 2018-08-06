@@ -67,7 +67,7 @@ extension UIView {
         animation.toValue = toIntensity
         animation.repeatCount = shouldRepeat ? .infinity : 0
         // HUGE_VAL = .infinity / Thanks http://stackoverflow.com/questions/7082578/cabasicanimation-unlimited-repeat-without-huge-valf
-        animation.duration = 0.09
+        animation.duration = 0.1
         animation.autoreverses = true
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         

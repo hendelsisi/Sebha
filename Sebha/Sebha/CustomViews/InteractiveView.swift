@@ -13,6 +13,7 @@ import HTPressableButton
 
 class InteractiveView: KDCircularProgress {
     var flowerWall:UIImageView?
+    var circularButton:HTPressableButton?
     var padding: CGFloat = 0.0
     var delegate: AADraggableViewDelegate?
     var duration: TimeInterval = 0.1
@@ -60,10 +61,10 @@ class InteractiveView: KDCircularProgress {
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
-        trackThickness = 0.07
-        progressThickness = 0.07
+        trackThickness = 0.14
+        progressThickness = 0.14
         progressInsideFillColor = UIColor.clear
-        trackColor = UIColor.white
+        trackColor = UIColor.color(fromHexString: "#d1bbaf")
         padding = 55.0
         if Device.IS_4_7_INCHES(){
              padding = 70.0
@@ -109,7 +110,18 @@ class InteractiveView: KDCircularProgress {
         flowerWall?.image = UIImage.init(named: "better")
         addSubview(flowerWall!)
         //add shadow button
-         let circularButton = HTPressableButton(frame: CGRect.init(x: (viewWidth / 2.0) - 61, y: (viewHeight / 2.0) - 62, width: 123, height: 123), buttonStyle: .circular)
+          circularButton = HTPressableButton(frame: CGRect.init(x: (viewWidth / 2.0) - 61, y: (viewHeight / 2.0) - 62, width: 123, height: 123), buttonStyle: .circular)
+        if Device.IS_4_7_INCHES(){
+             circularButton = HTPressableButton(frame: CGRect.init(x: (viewWidth / 2.0) - 85, y: (viewHeight / 2.0) - 87, width: 173, height: 173), buttonStyle: .circular)
+        }
+        else if Device.IS_5_5_INCHES(){
+            circularButton = HTPressableButton(frame: CGRect.init(x: (viewWidth / 2.0) - 93, y: (viewHeight / 2.0) - 95, width: 190, height: 190), buttonStyle: .circular)
+        }
+        else if Device.IS_5_8_INCHES(){
+            print("iphone X")
+               circularButton = HTPressableButton(frame: CGRect.init(x: (viewWidth / 2.0) - 81, y: (viewHeight / 2.0) - 83, width: 165, height: 165), buttonStyle: .circular)
+        }
+        
         circularButton?.buttonColor = UIColor.color(fromHexString: "#efded5")
         circularButton?.shadowColor = UIColor.color(fromHexString: "#d1bbaf")
         circularButton?.disabledButtonColor = UIColor.white
